@@ -16,12 +16,21 @@ img {
   max-height: 20rem;
 }
 
-.cart-info {
-  color: white;
+.fontawesome {
+  font-family: fontawesome;
 }
 
+h4: before {
+  color: blue;
+  content: "\f07a";
+  display: inline-block;
+  font-family: fontawesome;
+  fon-size: 16px;
+  adding-right: 10px;
+  }
+
 .flex-item1 {
-  background-color: black;
+  background-color: orange;
   width: 100%;
   height: 140px;
   color: white;
@@ -119,4 +128,8 @@ section {
   left: 8px;
   top: 10px;
   position: relative;
+}
+
+.forminfo {
+  text-align: center;
 }

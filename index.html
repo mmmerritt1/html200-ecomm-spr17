@@ -17,6 +17,16 @@
   <!-- TODO: replace with your personal Font Awesome CDN link
   <script src="https://use.fontawesome.com/???.js"></script> -->
 
+<!-- Email name storage function -->
+  <script type = "text/javascript">
+  function emailresp(){
+  var emailin = document.getElementById("emailin");
+  var concatoutput = document.getElementById("concatoutput");
+  var emailname = emailin.value;
+  concatoutput.value = "Thank you for registering to our mailing list: " + emailname + " !"
+  }
+  </script>
+
 </head>
 
 <body>
@@ -29,18 +39,27 @@
           <span class="logo-w">W</span>inter
           <span class="logo-w">W</span>ear
           <span class="logo-w">W</span>arehouse
+          <span class="fontawesome">&#xf07a;</span>
         </h1>
       </div>
     </div> <!-- /* End Flex-Item1 */ -->
 
+
+
     <nav>
-      <ul>
+        <ul>
         <li class="cart-info">
         <i class="fa fa-shopping-cart" aria-hidden="true"></i>
         </li>
       </ul>
+      <span class="fontawesome">&#xf07a;</span>
     </nav>
+
+  <h4>cart</h4>
+
   </header>
+
+
 
   <div class="flex-item">
     <nav>
@@ -116,17 +135,40 @@
         </div>
       </div>
 
+        <nav>
+        <ul>
+          <li class="cart-info">
+          <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+          </li>
+        </ul>
+      </nav>
+
     </section>
 
     <aside>
-      <form>
-        <label class="signup">Sign up for our mailing list:
-          <input type="email" name="email">
-        </label>
-
-        <input type="submit" value="Submit">
+      <form class="forminfo">
+        <h3>Sign up for our mailing list: </h3>
+        <fieldset>
+          <label>Enter email: </label>
+          <input type = "email" size="35"
+          id = "emailin" />
+          <input type = "button"
+          value = "Submit"
+          onclick = emailresp() /><br>
+          <input type = "email" size="71"
+          id = "concatoutput" />
+        </fieldset>
       </form>
     </aside>
+
+    <!-- h4: before {
+      color: blue;
+      content: "\f07a";
+      display: inline-block;
+      font-family: fontawesome;
+      font-size: 16px;
+      adding-right: 10px;
+      } -->
 
   </main>
   <script type="text/javascript" src="js/script.js"></script>
