@@ -25,7 +25,7 @@
   var emailin = document.getElementById("emailin");
   var concatoutput = document.getElementById("concatoutput");
   var emailname = emailin.value;
-  concatoutput.value = "Thank you for registering to our mailing list: " + emailname + " !"
+  concatoutput.value = "Thank you for registering to our mailing list, " + emailname + " !"
   }
   </script>
 
@@ -129,12 +129,12 @@
         <h3>Sign up for our mailing list: </h3>
         <fieldset>
           <label>Enter email: </label>
-          <input type = "email" size="35"
+          <input type = "email" size="70"
           id = "emailin" />
           <input type = "button"
           value = "Submit"
           onclick = emailresp() /><br>
-          <input type = "email" size="71"
+          <input type = "email" size="70"
           id = "concatoutput" />
         </fieldset>
       </form>
