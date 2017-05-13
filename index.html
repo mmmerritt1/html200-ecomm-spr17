@@ -29,9 +29,28 @@
   }
   </script>
 
+  <style media="screen">
+    .photo-container {
+      width: 90%;
+      margin: auto;
+      border: solid 1px rgba(189, 63, 191, 0.62);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .photo-frame {
+      /* equivalent to 49.5% of total browser width,
+      to make calculating srcset easier for us :) */
+      width: 55%;
+    }
+  </style>
+
 </head>
 
 <body>
+
+
 
   <header>
     <div class="flex-item1">
@@ -48,7 +67,8 @@
 
   </header>
 
-  <div class="flex-item">
+
+  <!-- <div class="flex-item">
     <nav>
       <div class="listlinks">
         <a href="#" style="float:left; margin-left: 100px;">Hats</a>
@@ -56,7 +76,18 @@
         <a href="#" style="float:right; margin-right: 100px;">Scarves</a>
       </div>
     </nav>
+  </div> -->
+
+  <div class="flex-item">
+    <nav>
+      <ul>
+        <li><a href="#">Hats</a></li>
+        <li><a href="#">Gloves</a></li>
+        <li><a href="#">Scarves</a></li>
+      </ul>
+    </nav>
   </div>
+
 
   <main>
     <section>
@@ -66,8 +97,25 @@
         <div class="col-md-3">
           <h3 class="xh3">Reversible Plaid</h3>
             <img src="images/reversible-plaid.jpg" alt="reversible plaid scarf">
+
+            <!-- <img srcset="images/reversible-plaid.jpg 1280w, yeah-800w.jpg 800w, yeah-400w.jpg 400w, yeah.jpg 400w, grr.jpg 500w"
+                  sizes="(max-width: 800px) 400px, (max-width: 1600px) 800px, (min-width: 1601px) 1200px"
+                  src="yeah-800w.jpg"
+                  alt="really cool cat yelling 'yeah!'"> -->
+
             <p>Two classic patterns in one great look: This supersoft and cozy reversible scarf instantly doubles your street-style cred. 100% acrylic.</p>
             <p>26.99</p>
+
+            <select id="quantity" size="1">
+              <option>Quantity</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+            <button type="submit">Add to Cart</button>
+
         </div>
 
         <div class="col-md-3">
@@ -75,6 +123,17 @@
             <img src="images/fringed-plaid.jpeg" alt="fringed plaid scarf">
             <p>Generously sized, extra soft and featuring a dazzling fringe, this scarf is rendered in a versatile gray, black and white plaid. Expertly beat the cold with style. 100% acrylic.</p>
             <p>18.99</p>
+
+            <select id="quantity" size="1">
+              <option>Quantity</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+            <button type="submit">Add to Cart</button>
+
         </div>
 
         <div class="col-md-3">
@@ -82,6 +141,17 @@
           <img src="images/multi-color.jpeg" alt="multi color scarf">
           <p>The Who What Where Oversize Color-Block Square Scarf is big, bold, and designed to twist and wrap any way you wish. All the colors of the season are harmonized in this oversize accent, so you can adjust to contrast or match your outfit; soft and lush, it’s your stylish standoff against cold AC and unexpected fall breezes. 100% acrylic.</p>
           <p>22.99</p>
+
+          <select id="quantity" size="1">
+            <option>Quantity</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+          <button type="submit">Add to Cart</button>
+
         </div>
 
         <div class="col-md-3">
@@ -89,6 +159,17 @@
           <img src="images/northern-lights.jpg" alt="northern lights scarf">
           <p>Handmade by women in Agra, sales provide medical and educational support in this remote area of India. Crinkly 100% cotton.</p>
           <p>29.99</p>
+
+          <select id="quantity" size="1">
+            <option>Quantity</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+          <button type="submit">Add to Cart</button>
+
         </div>
       </div>
 
@@ -98,6 +179,17 @@
           <img src="images/ombre-infinity.jpg" alt="ombre infinity scarf">
           <p>A dip-dye effect adds color and dimension to a cozy infinity scarf featuring a soft, chunky knit. 100% acrylic.</p>
           <p>11.99</p>
+
+          <select id="quantity" size="1">
+            <option>Quantity</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+          <button type="submit">Add to Cart</button>
+
         </div>
 
         <div class="col-md-3">
@@ -105,6 +197,17 @@
           <img src="images/twill.jpg" alt="ashby twill scarf">
           <p>Faribault brings you the Ashby Twill Scarf in Natural. Woven with a 'broken' twill technique, the Ashby Twill Scarf has a slight zigzag texture. Made in USA, this timeless scarf is crafted with luxurious merino wool and finished with heather gray fringe. 100% Merino wool.</p>
           <p>70.99</p>
+
+          <select id="quantity" size="1">
+            <option>Quantity</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+          <button type="submit">Add to Cart</button>
+
         </div>
 
         <div class="col-md-3">
@@ -112,6 +215,17 @@
           <img src="images/wool-cable.jpeg" alt="wool cable knit scarf">
           <p>Warm yourself with this women's natural cable knit scarf, crafted from 100% Merino wool. Imported.</p>
           <p>49.99</p>
+
+          <select id="quantity" size="1">
+            <option>Quantity</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+          <button type="submit">Add to Cart</button>
+
         </div>
 
         <div class="col-md-3">
@@ -119,6 +233,17 @@
           <img src="images/etro.png" alt="etro paisley print silk scarf">
           <p>Luxurious silk scarf with subtle paisley pattern. 100% silk.</p>
           <p>26.99</p>
+
+          <select id="quantity" size="1">
+            <option>Quantity</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+          <button type="submit">Add to Cart</button>
+
         </div>
       </div>
 
