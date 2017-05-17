@@ -83,6 +83,8 @@ header img {
 .logo-w {
   font-family: 'orbitron';
   text-align: right;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 /**************** ASIDE ****************/
