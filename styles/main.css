@@ -36,16 +36,7 @@ h4: before {
   color: white;
   }
 
-
-  /*.container {
-    width: 90%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-  }*/
-
-  .flex-item {
+.flex-item {
     width: 100%;
     margin: auto;
     display: flex;
@@ -103,6 +94,7 @@ input[type="submit"] {
   border-radius: 5px;
   font-size: .75rem;
   color: white;
+  font-family: fontawesome;
 }
 
 /*********** PRODUCTS SECTION ***********/
@@ -158,7 +150,7 @@ nav ul {
 nav li {
   background-color: aqua;
   padding: 1rem;
-  width: 24.8%;
+  width: 20%;
   list-style: none;
   display: inline;
 }
@@ -173,4 +165,16 @@ nav li {
     auto;text-align: center;
     border-bottom: .1em solid white;
   }
+}
+
+
+.icon-search {
+  height: 20px;
+  width: 20px;
+  border: none;
+  /*cursor: pointer;*/
+  /*color: white;*/
+  /*font-size: 3rem;*/
+  /*background-color: black;*/
+  position: relative;
 }

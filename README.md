@@ -71,3 +71,28 @@ Each weekly assignment will be graded independently. There will not be a final g
 
 ## Testing 
 [update this section with information about the testing steps you took to ensure site quality]
+
+1. Review index.html and all other .html files for the correct structure and layout.
+    Review .js and .css for satifactory structure and layout.
+2. Run each html through the W3C validator "Markup Validation Service" for potential corrections.
+3. Update the last set of files through Git Bash
+    RUN git status
+    git add "all files"
+    RUN "git status" again to make sure all files did get picked up and are no longer showing RED
+    git commit -m ""
+    git push -u origin master
+4. Capture the url in GitHub and run it on Mozilla, IE, and Google Chrome to verify look and feel of site created.
+    Note I do not have a phone worthy of testing so that step is left out (Verizon flip phone) no data.
+5. Each of these three browsers will act in different ways but usually the site created functions, it is just the look and feel that    needs to be adjusted.
+6. If anything doesn't look acceptable in a particular browsers, go back to the Atom files and make adjustments that can help in all    3 browsers. If changing to affect one makes things work differently in the other 2 then stay with the best fit to all.
+7. Re run from #1 until satisfied
+
+
+
+    
+    
+    
+    
+    
+   
+    

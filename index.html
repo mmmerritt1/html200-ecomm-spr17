@@ -4,7 +4,7 @@
   <title>Winter Scarves</title>
 
   <meta charset="utf-8">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles/reset.css">
   <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -15,6 +15,8 @@
     @import url('https://fonts.googleapis.com/css?family=Orbitron');
   </style>
   <link rel="stylesheet" href="/resources/css/font-awesome.min.css">
+
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 
   <!-- TODO: replace with your personal Font Awesome CDN link
   <script src="https://use.fontawesome.com/???.js"></script> -->
@@ -29,6 +31,21 @@
   }
   </script>
 
+  <script type="text/javascript">
+  var clicks = 0;
+  function onClick() {
+      clicks += 1;
+      document.getElementById("clicks").innerHTML = clicks;
+  };
+  </script>
+
+  <script type="text/javascript">
+  function onRemoveClick() {
+      clicks -= 1;
+      document.getElementById("clicks").innerHTML = clicks;
+  };
+  </script>
+
   <style media="screen">
     .photo-container {
       width: 90%;
@@ -40,17 +57,13 @@
     }
 
     .photo-frame {
-      /* equivalent to 49.5% of total browser width,
-      to make calculating srcset easier for us :) */
-      width: 55%;
+        width: 55%;
     }
   </style>
 
 </head>
 
 <body>
-
-
 
   <header>
     <div class="flex-item1">
@@ -60,23 +73,11 @@
           <span class="logo-w">W</span>inter
           <span class="logo-w">W</span>ear
           <span class="logo-w">W</span>arehouse
-          <span class="fontawesome">&#xf07a;</span>
         </h1>
       </div>
     </div> <!-- /* End Flex-Item1 */ -->
 
   </header>
-
-
-  <!-- <div class="flex-item">
-    <nav>
-      <div class="listlinks">
-        <a href="#" style="float:left; margin-left: 100px;">Hats</a>
-        <a href="#" style="float:center;">Gloves</a>
-        <a href="#" style="float:right; margin-right: 100px;">Scarves</a>
-      </div>
-    </nav>
-  </div> -->
 
   <div class="flex-item">
     <nav>
@@ -88,7 +89,6 @@
     </nav>
   </div>
 
-
   <main>
     <section>
       <h2 class="xh2">Scarves</h2>
@@ -96,25 +96,19 @@
       <div class="container">
         <div class="col-md-3">
           <h3 class="xh3">Reversible Plaid</h3>
-            <img src="images/reversible-plaid.jpg" alt="reversible plaid scarf">
+            <!-- <img src="images/reversible-plaid.jpg" alt="reversible plaid scarf"> -->
 
-            <!-- <img srcset="images/reversible-plaid.jpg 1280w, yeah-800w.jpg 800w, yeah-400w.jpg 400w, yeah.jpg 400w, grr.jpg 500w"
+            <img srcset="images/reversible-plaid.jpg 1280w, images/fringed-plaid.jpeg 800w, images/multi-color.jpeg 400w,
+                images/northern-lights.jpg 500w"
                   sizes="(max-width: 800px) 400px, (max-width: 1600px) 800px, (min-width: 1601px) 1200px"
-                  src="yeah-800w.jpg"
-                  alt="really cool cat yelling 'yeah!'"> -->
+                  src="images/reversible-plaid.jpg"
+                  alt="Nice scarff">
 
             <p>Two classic patterns in one great look: This supersoft and cozy reversible scarf instantly doubles your street-style cred. 100% acrylic.</p>
             <p>26.99</p>
 
-            <select id="quantity" size="1">
-              <option>Quantity</option>
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-            </select>
-            <button type="submit">Add to Cart</button>
+            <button type="submit" onClick="onClick()">Add to Cart</button>
+            <button type="submit" onClick="onRemoveClick()">Remove from Cart</button>
 
         </div>
 
@@ -124,15 +118,8 @@
             <p>Generously sized, extra soft and featuring a dazzling fringe, this scarf is rendered in a versatile gray, black and white plaid. Expertly beat the cold with style. 100% acrylic.</p>
             <p>18.99</p>
 
-            <select id="quantity" size="1">
-              <option>Quantity</option>
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-            </select>
-            <button type="submit">Add to Cart</button>
+            <button type="submit" onClick="onClick()">Add to Cart</button>
+            <button type="submit" onClick="onRemoveClick()">Remove from Cart</button>
 
         </div>
 
@@ -142,16 +129,8 @@
           <p>The Who What Where Oversize Color-Block Square Scarf is big, bold, and designed to twist and wrap any way you wish. All the colors of the season are harmonized in this oversize accent, so you can adjust to contrast or match your outfit; soft and lush, it’s your stylish standoff against cold AC and unexpected fall breezes. 100% acrylic.</p>
           <p>22.99</p>
 
-          <select id="quantity" size="1">
-            <option>Quantity</option>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-          </select>
-          <button type="submit">Add to Cart</button>
-
+          <button type="submit" onClick="onClick()">Add to Cart</button>
+          <button type="submit" onClick="onRemoveClick()">Remove from Cart</button>
         </div>
 
         <div class="col-md-3">
@@ -160,15 +139,8 @@
           <p>Handmade by women in Agra, sales provide medical and educational support in this remote area of India. Crinkly 100% cotton.</p>
           <p>29.99</p>
 
-          <select id="quantity" size="1">
-            <option>Quantity</option>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-          </select>
-          <button type="submit">Add to Cart</button>
+          <button type="submit" onClick="onClick()">Add to Cart</button>
+          <button type="submit" onClick="onRemoveClick()">Remove from Cart</button>
 
         </div>
       </div>
@@ -180,15 +152,8 @@
           <p>A dip-dye effect adds color and dimension to a cozy infinity scarf featuring a soft, chunky knit. 100% acrylic.</p>
           <p>11.99</p>
 
-          <select id="quantity" size="1">
-            <option>Quantity</option>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-          </select>
-          <button type="submit">Add to Cart</button>
+          <button type="submit" onClick="onClick()">Add to Cart</button>
+          <button type="submit" onClick="onRemoveClick()">Remove from Cart</button>
 
         </div>
 
@@ -198,15 +163,8 @@
           <p>Faribault brings you the Ashby Twill Scarf in Natural. Woven with a 'broken' twill technique, the Ashby Twill Scarf has a slight zigzag texture. Made in USA, this timeless scarf is crafted with luxurious merino wool and finished with heather gray fringe. 100% Merino wool.</p>
           <p>70.99</p>
 
-          <select id="quantity" size="1">
-            <option>Quantity</option>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-          </select>
-          <button type="submit">Add to Cart</button>
+          <button type="submit" onClick="onClick()">Add to Cart</button>
+          <button type="submit" onClick="onRemoveClick()">Remove from Cart</button>
 
         </div>
 
@@ -216,15 +174,8 @@
           <p>Warm yourself with this women's natural cable knit scarf, crafted from 100% Merino wool. Imported.</p>
           <p>49.99</p>
 
-          <select id="quantity" size="1">
-            <option>Quantity</option>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-          </select>
-          <button type="submit">Add to Cart</button>
+          <button type="submit" onClick="onClick()">Add to Cart</button>
+          <button type="submit" onClick="onRemoveClick()">Remove from Cart</button>
 
         </div>
 
@@ -234,18 +185,15 @@
           <p>Luxurious silk scarf with subtle paisley pattern. 100% silk.</p>
           <p>26.99</p>
 
-          <select id="quantity" size="1">
-            <option>Quantity</option>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-          </select>
-          <button type="submit">Add to Cart</button>
+          <button type="submit" onClick="onClick()">Add to Cart</button>
+          <button type="submit" onClick="onRemoveClick()">Remove from Cart</button>
 
         </div>
       </div>
+
+
+    <p>Cart Quantity: <a id="clicks">0</a></p>
+
 
     </section>
 
