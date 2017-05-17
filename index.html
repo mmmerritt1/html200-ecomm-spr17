@@ -59,6 +59,26 @@
       .photo-frame {
         width: 55%;
       }
+
+     body {
+       background-color: lightgreen;
+       }
+
+       @media screen and (max-width: 480px) {
+        body {
+          background-color: lightgreen;
+          }
+       }
+       @media screen and (min-width: 481px) and (max-width: 649px) {
+        body {
+          background-color: skyblue;
+          }
+       }
+       @media screen and (min-width: 650px) {
+        body {
+          background-color: orange;
+          }
+       }
     </style>
 
 </head>
@@ -69,7 +89,13 @@
     <div class="flex-item1">
       <div>
         <h1 class="xh1">
-          <img class="sizelogo" src="images/logo-scarfcat.png" alt="dapper cartoon cat wearing a scarf">
+          <!-- <img class="sizelogo" src="images/logo-scarfcat.png" alt="dapper cartoon cat wearing a scarf"> -->
+          <img srcset="images/logo-scarfcat.png 800w, images/logo-scarfcat.png 1280w, images/logo-scarfcat.png 400w,
+              images/logo-scarfcat.png 500w"
+                sizes="(max-width: 800px) 400px, (max-width: 1600px) 800px, (min-width: 1601px) 1200px"
+                src="images/logo-scarfcat.png"
+                alt="">
+
           <span class="logo-w">W</span>inter
           <span class="logo-w">W</span>ear
           <span class="logo-w">W</span>arehouse
