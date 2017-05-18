@@ -164,7 +164,7 @@ nav li {
   nav li {
     display: block;
     width: 100%;
-    auto;text-align: center;
+    text-align: center;
     border-bottom: .1em solid white;
   }
 }
