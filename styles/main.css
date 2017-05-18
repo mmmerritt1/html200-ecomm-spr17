@@ -25,7 +25,7 @@ h4:before {
   content: "\f07a";
   display: inline-block;
   font-family: fontawesome;
-  font-family: -size: 16px;
+  font-size: 1em;
   padding-right: 10px;
   }
 
