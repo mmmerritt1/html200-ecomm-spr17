@@ -20,7 +20,7 @@ img {
   font-family: fontawesome;
 }
 
-h4: before {
+h4:before {
   color: blue;
   content: "\f07a";
   display: inline-block;
