@@ -25,8 +25,8 @@ h4:before {
   content: "\f07a";
   display: inline-block;
   font-family: fontawesome;
-  fon-size: 16px;
-  adding-right: 10px;
+  font-family: -size: 16px;
+  padding-right: 10px;
   }
 
 .flex-item1 {
