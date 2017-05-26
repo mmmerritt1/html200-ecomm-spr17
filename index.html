@@ -29,17 +29,13 @@
       var emailname = emailin.value;
       concatoutput.value = "Thank you for registering to our mailing list, " + emailname + " !"
       };
-    </script>
 
-    <script type="text/javascript">
       var clicks = 0;
       function onClick() {
       clicks += 1;
       document.getElementById("clicks").innerHTML = clicks;
       };
-    </script>
 
-    <script type="text/javascript">
       function onRemoveClick() {
       clicks -= 1;
       document.getElementById("clicks").innerHTML = clicks;
@@ -86,21 +82,14 @@
     <div class="flex-item1">
       <div>
         <h1 class="xh1">
-          <!-- <img class="sizelogo" src="images/logo-scarfcat.png" alt="dapper cartoon cat wearing a scarf">
-
-          <img srcset="images/logo-scarfcat.png 1280w, images/logo-scarfcat2x.png 800w, images/logo-scarfcat3x.png 400w,
-              images/logo-scarfcat4x.png 500w"
-                sizes="(max-width: 800px) 400px, (max-width: 1600px) 800px, (min-width: 1601px) 1200px"
-                src="images/logo-scarfcat.png"
-                alt=""> -->
 
                 <img src="images/logo-scarfcat.png"
                      srcset="images/logo-scarfcat.png 1280w, images/logo-scarfcat2x.png 800w, images/logo-scarfcat3x.png 400w"
                      sizes="(min-width: 900px) 1000px,
                            (max-width: 900px) and (min-width: 400px) 50em,
                            ( not (orientation: portrait) ) 300px,
-                           ( (orientation: landscape) or (min-width: 1000px) ) 50vw,
-                           100vw">
+                           ( (orientation: landscape) or (min-width: 1000px) ) 50vw, 100vw"
+                     alt="Logo" >
 
           <span class="logo-w">W</span>inter
           <span class="logo-w">W</span>ear
