@@ -1,4 +1,6 @@
-var products = [
+var item = ["Reversible Plaid", "Fringed Plaid", "Multi Color", "Northern Lights", "Ombre Infinity", "Ashby Twill", "Wool Cable Knit", "Etro Paisley-Print Silk"]
+
+ var products = [
   {
     "name": "Reversible Plaid",
     "price": 26.99,
@@ -48,4 +50,3 @@ var products = [
     "imageTitle": "twill.jpg"
   }
 ]
-
