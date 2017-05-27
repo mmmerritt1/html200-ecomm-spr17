@@ -54,6 +54,25 @@ h4:before {
 
   }
 
+  .flex-item2 {
+      width: 100%;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      font-style: normal;
+      font-family: 'orbitron';
+      font-size: 1.5rem;
+      background-color: aqua;
+      text-align: center;
+      height: 1.5rem;
+      color: black;
+
+    }
+
+
+
+
   .listlinks {
   background-color: aqua;
   background-position: center;
